@@ -5,7 +5,7 @@ ApplicationWindow {
     width: 640
     height: 480
     visible: true
-    title: qsTr("Tabs")
+    title: qsTr("Zr的Ubuntu_Qt App")
 
     SwipeView {
         id: swipeView
@@ -24,10 +24,10 @@ ApplicationWindow {
         currentIndex: swipeView.currentIndex
 
         TabButton {
-            text: qsTr("Page 1")
+            text: qsTr("页面1")
         }
         TabButton {
-            text: qsTr("Page 2")
+            text: qsTr("页面2")
         }
     }
 }
