@@ -34,7 +34,7 @@
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
       "inheritEnvironments": [ "linux_x64" ],
-      "remoteMachineName": "-1086469434;192.168.42.129 (username=zr, port=22, authentication=Password)",
+      "remoteMachineName": "-177123891;192.168.1.56 (username=zr, port=22, authentication=Password)",
       "remoteCMakeListsRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/src",
       "remoteBuildRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/build/${name}",
       "remoteInstallRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/install/${name}",
@@ -56,6 +56,38 @@
         }
       ],
       "intelliSenseMode": "linux-gcc-x64"
+    },
+    {
+      "name": "Linux-GCC-Release",
+      "generator": "Ninja",
+      "configurationType": "MinSizeRel",
+      "cmakeExecutable": "cmake",
+      "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_x64" ],
+      "remoteMachineName": "-177123891;192.168.1.56 (username=zr, port=22, authentication=Password)",
+      "remoteCMakeListsRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/src",
+      "remoteBuildRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/build/${name}",
+      "remoteInstallRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/install/${name}",
+      "remoteCopySources": true,
+      "rsyncCommandArgs": "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput": false,
+      "remoteCopySourcesMethod": "rsync",
+      "addressSanitizerRuntimeFlags": "detect_leaks=0",
+      "variables": [
+        {
+          "name": "QT_DIR",
+          "value": "/opt/Qt5.12.10/5.12.10/gcc_64/lib/cmake/Qt5",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5_DIR",
+          "value": "/opt/Qt5.12.10/5.12.10/gcc_64/lib/cmake/Qt5",
+          "type": "PATH"
+        }
+      ]
     }
   ]
 }
