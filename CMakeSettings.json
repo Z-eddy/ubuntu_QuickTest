@@ -45,13 +45,13 @@
       "addressSanitizerRuntimeFlags": "detect_leaks=0",
       "variables": [
         {
-          "name": "QT_DIR",
-          "value": "/opt/Qt5.12.10/5.12.10/gcc_64/lib/cmake/Qt5",
+          "name": "Qt5_DIR",
+          "value": "/home/zr/Qt/5.15.2/gcc_64/lib/cmake/Qt5",
           "type": "PATH"
         },
         {
-          "name": "Qt5_DIR",
-          "value": "/opt/Qt5.12.10/5.12.10/gcc_64/lib/cmake/Qt5",
+          "name": "QT_DIR",
+          "value": "/home/zr/Qt/5.15.2/gcc_64/lib/cmake/Qt5",
           "type": "PATH"
         }
       ],
@@ -79,44 +79,12 @@
       "variables": [
         {
           "name": "QT_DIR",
-          "value": "/opt/Qt5.12.10/5.12.10/gcc_64/lib/cmake/Qt5",
+          "value": "/home/zr/Qt/5.15.2/gcc_64/lib/cmake/Qt5/Qt5",
           "type": "PATH"
         },
         {
           "name": "Qt5_DIR",
-          "value": "/opt/Qt5.12.10/5.12.10/gcc_64/lib/cmake/Qt5",
-          "type": "PATH"
-        }
-      ]
-    },
-    {
-      "name": "Linux-ARM-Release",
-      "generator": "Ninja",
-      "configurationType": "MinSizeRel",
-      "cmakeExecutable": "cmake",
-      "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": "",
-      "inheritEnvironments": [ "linux_arm" ],
-      "remoteMachineName": "${defaultRemoteMachineName}",
-      "remoteCMakeListsRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/src",
-      "remoteBuildRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/build/${name}",
-      "remoteInstallRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/install/${name}",
-      "remoteCopySources": true,
-      "rsyncCommandArgs": "-t --delete --delete-excluded",
-      "remoteCopyBuildOutput": false,
-      "remoteCopySourcesMethod": "rsync",
-      "addressSanitizerRuntimeFlags": "detect_leaks=0",
-      "variables": [
-        {
-          "name": "QT_DIR",
-          "value": "/opt/Qt5.12.10/5.12.10/gcc_64/lib/cmake/Qt5",
-          "type": "PATH"
-        },
-        {
-          "name": "Qt5_DIR",
-          "value": "/opt/Qt5.12.10/5.12.10/gcc_64/lib/cmake/Qt5",
+          "value": "/home/zr/Qt/5.15.2/gcc_64/lib/cmake/Qt5/Qt5",
           "type": "PATH"
         }
       ]
