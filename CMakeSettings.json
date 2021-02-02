@@ -26,7 +26,7 @@
     },
     {
       "name": "Linux-Clang-Debug",
-      "generator": "Ninja",
+      "generator": "Unix Makefiles",
       "configurationType": "Debug",
       "cmakeExecutable": "cmake",
       "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
@@ -45,13 +45,43 @@
       "addressSanitizerRuntimeFlags": "detect_leaks=0",
       "variables": [
         {
-          "name": "Qt5_DIR",
-          "value": "/home/zr/Qt/5.15.2/gcc_64/lib/cmake/Qt5",
+          "name": "QT_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5",
           "type": "PATH"
         },
         {
-          "name": "QT_DIR",
-          "value": "/home/zr/Qt/5.15.2/gcc_64/lib/cmake/Qt5",
+          "name": "Qt5_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Core_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5Core",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Gui_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5Gui",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Network_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5Network",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5QmlModels_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5QmlModels",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Qml_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5Qml",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Quick_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5Quick",
           "type": "PATH"
         }
       ],
@@ -59,7 +89,7 @@
     },
     {
       "name": "Linux-Clang-Release",
-      "generator": "Ninja",
+      "generator": "Unix Makefiles",
       "configurationType": "MinSizeRel",
       "cmakeExecutable": "cmake",
       "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
@@ -79,15 +109,110 @@
       "variables": [
         {
           "name": "QT_DIR",
-          "value": "/home/zr/Qt/5.15.2/gcc_64/lib/cmake/Qt5/Qt5",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5",
           "type": "PATH"
         },
         {
           "name": "Qt5_DIR",
-          "value": "/home/zr/Qt/5.15.2/gcc_64/lib/cmake/Qt5/Qt5",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Core_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5Core",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Gui_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5Gui",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Network_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5Network",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5QmlModels_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5QmlModels",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Qml_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5Qml",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Quick_DIR",
+          "value": "/home/zr/Qt5.14.2/5.14.2/gcc_64/lib/cmake/Qt5Quick",
           "type": "PATH"
         }
       ]
+    },
+    {
+      "name": "Linux-ARM-Debug",
+      "generator": "Unix Makefiles",
+      "configurationType": "Debug",
+      "cmakeExecutable": "cmake",
+      "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_arm" ],
+      "remoteMachineName": "-177123891;192.168.1.56 (username=zr, port=22, authentication=Password)",
+      "remoteCMakeListsRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/src",
+      "remoteBuildRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/build/${name}",
+      "remoteInstallRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/install/${name}",
+      "remoteCopySources": true,
+      "rsyncCommandArgs": "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput": false,
+      "remoteCopySourcesMethod": "rsync",
+      "addressSanitizerRuntimeFlags": "detect_leaks=0",
+      "variables": [
+        {
+          "name": "QT_DIR",
+          "value": "/home/zr/raspi/qt5pi/lib/cmake/Qt5",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5_DIR",
+          "value": "/home/zr/raspi/qt5pi/lib/cmake/Qt5",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Core_DIR",
+          "value": "/home/zr/raspi/qt5pi/lib/cmake/Qt5Core",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Gui_DIR",
+          "value": "/home/zr/raspi/qt5pi/lib/cmake/Qt5Gui",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Network_DIR",
+          "value": "/home/zr/raspi/qt5pi/lib/cmake/Qt5Network",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5QmlModels_DIR",
+          "value": "/home/zr/raspi/qt5pi/lib/cmake/Qt5QmlModels",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Qml_DIR",
+          "value": "/home/zr/raspi/qt5pi/lib/cmake/Qt5Qml",
+          "type": "PATH"
+        },
+        {
+          "name": "Qt5Quick_DIR",
+          "value": "/home/zr/raspi/qt5pi/lib/cmake/Qt5Quick",
+          "type": "PATH"
+        }
+      ],
+      "cmakeToolchain": "",
+      "intelliSenseMode": "linux-gcc-arm",
+      "remoteCopyUseCompilerDefaults": true
     }
   ]
 }

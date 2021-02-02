@@ -4,9 +4,9 @@
   "configurations": [
     {
       "type": "cppgdb",
-      "name": "ubuntu_QuickTest",
+      "name": "ubuntuLocalQuickTest",
       "project": "CMakeLists.txt",
-      "projectTarget": "ubuntu_QuickTest",
+      "projectTarget": "ubuntuLocalQuickTest",
       "comment": "Learn how to configure remote debugging. See here for more info http://aka.ms/vslinuxdebug",
       "debuggerConfiguration": "gdb",
       "args": [],

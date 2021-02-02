@@ -19,6 +19,19 @@ ApplicationWindow {
         }
     }
 
+    Timer{
+        id:timer_
+        interval: 1500
+        repeat: true
+        running: true
+        onTriggered: {
+            if(tabBar.currentIndex===0)
+                tabBar.currentIndex=1
+            else
+                tabBar.currentIndex=0
+        }
+    }
+
     footer: TabBar {
         id: tabBar
         currentIndex: swipeView.currentIndex
